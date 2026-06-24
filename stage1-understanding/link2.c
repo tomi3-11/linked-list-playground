@@ -115,6 +115,7 @@ int main() {
     
     printList(dummy);
     
+    free(dummy);
     return 0;
 }
 
