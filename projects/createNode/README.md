@@ -9,6 +9,7 @@ so lets do this
 - Then we shall need to allocate memory for each node created since we are dealing with pointers
 - The remember to free the memory allocated.
 
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -31,3 +32,4 @@ int main(){
     return 0;
 
 }
+```
