@@ -55,7 +55,6 @@ void append2(struct Node *head, int value){
         head->val = value;
         return;
     }
-6r    
     struct Node *current = head;
     
     while(current->next){
