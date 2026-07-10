@@ -20,5 +20,6 @@ int main(){
 
     // Display the node, (Data and pointer)
     printf("The Node:\n\tData: %d\n\tPointer: %p", node->Data, (void *)node->next);
+    free(node);
     return 0;
 }
