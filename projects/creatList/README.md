@@ -58,4 +58,11 @@ int main(){
 
 Tara jst like that you have created a node, connected another node to it and formed a small linked list.
 
+### Questions to take after this:
+1. What should head point to when the list is empty?
+> Ans: Head should point to zero; since it ti not linked to any other node when the list is empty.
+
+2. How do you know the list contains no nodes?
+> When Head points to `NULL`.
+
 Documented by: [Tom](https://github.com/tomi3-11)
