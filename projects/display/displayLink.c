@@ -18,6 +18,17 @@ void append(struct Node *dummy, int value){
     current->next = newNode;
 }
 
+void printList(struct Node *dummy){
+    struct Node *current = dummy->next;
+
+    while (current) {
+        printf("%d", current->data);
+        if (current->next) printf("->");
+        current = current->next;
+    }
+    printf("\n");
+}
+
 int main(){
     // create nodes and allocate memory to it.
     struct Node *node1 = malloc(sizeof(struct Node));
