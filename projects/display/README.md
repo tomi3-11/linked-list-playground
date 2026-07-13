@@ -39,3 +39,20 @@ void append(struct Node *dummy, int value){
 This above function does `appending` to the tail of the linkedlist, it checks if there is a next node, then updates the current value.
 
 Then create new node, and add the value to it, then point the current node to the new node.
+
+4. Create a function to display and print each node of the linkedlist
+```c
+void printList(struct Node *dummy){
+    struct Node *current = dummy->next;
+
+    while (current) {
+        printf("%d", current->data);
+        if (current->next) printf("->");
+        current = current->next;
+    }
+    printf("\n");
+}
+```
+Here we loop through the list as long as current is not `NULL`, the prints the individual node, then increment the current node.
+
+
