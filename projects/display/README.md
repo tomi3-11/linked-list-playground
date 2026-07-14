@@ -55,4 +55,21 @@ void printList(struct Node *dummy){
 ```
 Here we loop through the list as long as current is not `NULL`, the prints the individual node, then increment the current node.
 
+5. Now call all the functions inside the main fucntion to see them at work
+```c
+int main(){
+    struct Node *dummy = malloc(sizeof(struct Node));
 
+    // Add some data to the list
+    append(dummy, 45);
+    append(dummy, 56);
+    append(dummy, 12);
+    append(dummy, 89);
+
+    // display thelist
+    printList(dummy);
+
+    free(dummy);
+}
+```
+here we just add data to the list, print the list contents and free the allocated memory.
