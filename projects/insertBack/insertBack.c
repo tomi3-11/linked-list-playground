@@ -9,16 +9,21 @@ struct Node {
 void insertBack(struct Node *head, int value){
     struct Node *current = head;
 
+    // check if the list is empty; then add the new value as head
     if (!head) {
         head->Data = value;
     }
 
+    // increment the current value to get to the tail
     while (current->next){
         current = current->next;
     }
 
+    // create a newNode and allocate some memory
     struct Node *newNode = malloc(sizeof(struct Node));
+    // add the new value to the newNode
     newNode->Data = value;
+    // point the current node to the newNode
     current->next = newNode;
 }
 
@@ -44,6 +49,9 @@ int main(){
     insertBack(head, 124);
 
     // display
+    printList(head);
+    insertBack(head, 138);
+    insertBack(head, 238);
     printList(head);
 
     free(head);
