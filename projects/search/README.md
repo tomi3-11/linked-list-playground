@@ -47,6 +47,22 @@ printf("Not found: %d", Key);
 
 All done, you have successfully implemented a linear search on linkedlist
 
+Here is the complete code
+```c
+void search(struct Node *head, int value){
+    struct Node *current = head;
+
+    while (current){
+        if (current->Data == value){
+            printf("Found, %d\n", value);
+            return;
+        }
+        current = current->next;
+    }
+    printf("Not found: %d", value);
+}
+```
+
 For visual purposes, use this:
 ![Linear Search Image](./search.png)
 
