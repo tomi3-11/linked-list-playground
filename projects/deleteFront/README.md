@@ -56,4 +56,14 @@ void deleteFront(struct Node *dummy){
 For visualization, refer to the following
 ![Visualization](./deleteFront.png)
 
+### Refresh your skills with this.
+Remember:
+- Save the current head.
+- Move the head to the next node.
+- Free the removed node
+
+Consider:
+- Empty list.
+- One-node list.
+
 Documented By: [Tom](https://github.com/tomi3-11)
